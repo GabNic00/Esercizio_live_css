@@ -1,0 +1,113 @@
+:root {
+    /* Colori principali del brand */
+    --brand-primary: #ff6600;
+    --brand-secondary: #333;
+    --brand-background: #f9f9f9;
+    --brand-text: #333;
+    --brand-link: #fff;
+    --brand-link-hover: #555;
+  
+    /* Altri stili comuni */
+    --border-radius: 8px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --back-home-button-bg: #ff6600;
+  --back-home-button-text: #fff;
+  --back-home-button-hover: #e55c00;
+  }
+
+  /* L'inclusione di body { margin: 0; padding: 0; } è una pratica comune nel CSS per "azzerare" i margini e i padding predefiniti del browser. 
+Questo aiuta a garantire che non ci siano spazi indesiderati intorno al contenuto della pagina e fornisce un controllo più preciso sull'aspetto della pagina.
+
+I browser impostano di default alcuni margini e padding per gli elementi HTML, e questi possono variare leggermente tra i diversi browser. 
+Affermando body { margin: 0; padding: 0; }, stai garantendo una base coerente e prevedibile per il layout della tua pagina. 
+Questo è particolarmente utile quando si lavora su progetti in cui è importante avere un controllo dettagliato sull'aspetto della pagina in tutti i browser.
+
+In generale, questa è una pratica consigliata quando si sviluppa CSS per garantire una maggiore coerenza nel rendering della pagina tra i diversi browser. */
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: var(--brand-primary);
+    color: var(--brand-link);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: var(--brand-secondary);
+    padding: 10px;
+    text-align: center;
+  }
+  
+   a {
+    color: var(--brand-link);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+  }
+  
+ a:hover {
+    background-color: var(--brand-link-hover);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--brand-secondary);
+    color: var(--brand-link);
+  }
+  
+  .generic_card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: var(--brand-background);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .center_element{
+    max-width: 800px;
+    margin: 20px auto;
+}
+  
+  img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+
+  
+  /* Stile del pulsante */
+  .button {
+    background-color: var(--brand-primary);
+    color: var(--brand-link);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #e55c00;
+  }
+   label{
+    display: block;
+    margin-bottom: 10px;
+   }
+  

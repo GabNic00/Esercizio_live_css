@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/form.css">
+  <title>Form</title>
+</head>
+<body>
+  <header>
+    <h1>Iscriviti alla newsletter</h1>
+</header>
+<nav>
+  <a href="Home.html">Home</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Form_newsletter.html">Form</a>
+    <a href="Contatti.html">Contatti</a>
+    
+</nav>
+  <form action="success.html" method="get" >
+    <label for="nome">Nome*:</label>
+    <input type="text" id="nome" name="nome" required autofocus>
+
+    <br>
+
+    <label for="cognome">Cognome*:</label>
+    <input type="text" id="cognome" name="cognome" required>
+
+    <br>
+
+    <label for="animale">Animale Domestico*:</label>
+    <select id="animale" name="animale" required>
+      <option value="cane">Cane</option>
+      <option value="gatto">Gatto</option>
+      <option value="pappagallo">Pappagallo</option>
+    </select>
+
+    <br>
+
+    <label for="email">Email*:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <button type="submit">Invia</button>
+  </form>
+  <footer>
+    <p>&copy; 2023 Il Tuo Nome. Tutti i diritti riservati.</p>
+</footer>
+</body>
+</html>
+
