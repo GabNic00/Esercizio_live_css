@@ -1,0 +1,17 @@
+@import url("./generic.css");
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+h2 {
+    border-bottom: 1px solid var(--brand-secondary);
+    padding: 10px;
+}
+
+
+#button1 {
+    margin-top: 10px;
+
+}
